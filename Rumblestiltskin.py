@@ -14,11 +14,9 @@ import requests
 
 class Rumblestiltskin:
     def __init__(self):
-        # self.creds = self.get_creds()
-        # Will use sysargv 1 or 2 below to replace blur with the client short name
-        # self.raptor_api_key = f'redacted.yaml'
+
+        # Will use sysargv 1 or 2 below to replace redacted with the client short name
         self.raptor_api_key = self.set_raptor_api_key()
-        # self.rumble_api_key = self.creds["rumble"]
         self.rumble_api_key = self.get_creds()
         self.raptor_count = 0
         self.rumble_count = 0
